@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\manjupgm\Algorithms\Algorithmspgm\Algorithmspgm\bin\Debug\Algorithmspgm.exe.config
+C:\Users\Admin\Desktop\manjupgm\Algorithms\Algorithmspgm\Algorithmspgm\bin\Debug\Algorithmspgm.exe
+C:\Users\Admin\Desktop\manjupgm\Algorithms\Algorithmspgm\Algorithmspgm\bin\Debug\Algorithmspgm.pdb
+C:\Users\Admin\Desktop\manjupgm\Algorithms\Algorithmspgm\Algorithmspgm\obj\Debug\Algorithmspgm.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\manjupgm\Algorithms\Algorithmspgm\Algorithmspgm\obj\Debug\Algorithmspgm.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\manjupgm\Algorithms\Algorithmspgm\Algorithmspgm\obj\Debug\Algorithmspgm.exe
+C:\Users\Admin\Desktop\manjupgm\Algorithms\Algorithmspgm\Algorithmspgm\obj\Debug\Algorithmspgm.pdb
