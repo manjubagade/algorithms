@@ -239,6 +239,11 @@ namespace Algorithmspgm
 
             Console.ReadLine();
         }
+
+        /// <summary>
+        /// Binary search
+        /// </summary>
+        /// <param name="numbers"></param>
         public void BinarySearch(int[] numbers)
         {
             int firstind = 0;
