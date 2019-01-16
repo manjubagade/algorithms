@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Algorithmspgm
 {
-    class Binarysearch
+    class BinarySearch2
     {
-        public void BinarySearchint()
+        public void BinSer()
         {
-            Utility uts = new Utility();
-            uts.BinarySearchInt();
+            Utility uuut = new Utility();
+            uuut.BinarySearchInt();
         }
     }
 }

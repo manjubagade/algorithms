@@ -44,8 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Anagram.cs" />
-    <Compile Include="Binarysearch.cs" />
+    <Compile Include="BinarySearch2.cs" />
+    <Compile Include="BinarySearchS.cs" />
+    <Compile Include="BinarySearchword.cs" />
+    <Compile Include="BubbleSortthouthFile.cs" />
     <Compile Include="CountNotes.cs" />
+    <Compile Include="CountPrime.cs" />
     <Compile Include="Decimaltobinary.cs" />
     <Compile Include="MonthlyPay.cs" />
     <Compile Include="PalidromeAnagram.cs" />

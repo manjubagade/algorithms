@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="SortingAndSearching.cs" company="bridgelabz">
+// <copyright file="CountPrime.cs" company="Bridgelabz">
 //     Company copyright tag.
 // </copyright>
 //-----------------------------------------------------------------------
@@ -8,17 +8,17 @@ namespace Algorithmspgm
     using System;
 
     /// <summary>
-    /// buble sort searching program
+    /// this class is used to find the anagram of a string
     /// </summary>
-   public class SortingAndSearching
+    public class CountPrime
     {
         /// <summary>
-        /// binnary search function 
+        ///  to find anagram.
         /// </summary>
-        public void SortingSearchingarray()
+        public void CountPrimeNum()
         {
-            Utility uts = new Utility();
-            uts.BubbleSortInt();
+            Utility ut = new Utility();
+            ut.PrimeNum();
         }
     }
 }

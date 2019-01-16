@@ -1,18 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿//-----------------------------------------------------------------------
+// <copyright file="CountNotes.cs" company="bridgelabz">
+//     Company copyright tag.
+// </copyright>
+//-----------------------------------------------------------------------
 namespace Algorithmspgm
 {
-   public class CountNotes
-    {
+     using System;
+
+    /// <summary>
+    /// this class is used to find prime factors of a given number
+    /// </summary>
+    public class CountNotes
+    { 
+         /// <summary>
+         /// count the total number of n
+         /// </summary>
         public void CountTheNotes()
         {
             Utility utility = new Utility();
             int count = 0;
             int[] notes = { 1000, 500, 100, 50, 10, 5, 2, 1 };
+            ////takes input from user for notes
             Console.WriteLine("enter ammount of notes");
             int ammount = utility.GetInt();
             for (int i = 0; i < notes.Length; i++)
@@ -30,4 +38,3 @@ namespace Algorithmspgm
         }
     }
  }
-

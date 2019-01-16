@@ -28,8 +28,12 @@ namespace Algorithmspgm
                 Console.WriteLine("ENTER PRESS 4 : FOR MONTHLYPAYMENTS");
                 Console.WriteLine("ENTER PRESS 5 : FOR SQUREROOT");
                 Console.WriteLine("ENTER PRESS 6 OF SORTANDSEARCHING");
-                Console.WriteLine("ENTER PRESS 7 FOR decimaltobinary");
-                Console.WriteLine("ENTER PRESS 8: for hasg ");
+                Console.WriteLine("ENTER PRESS 7 FOR DECIMAL TO BINARY");
+                Console.WriteLine("ENTER PRESS 8: VENDINGMACHINE ");
+                Console.WriteLine("ENTER PRESS 9: BINARYSEARCH");
+                Console.WriteLine("ENTER PRESS 10: BINARYSEARCH SREING");
+                Console.WriteLine("ENTER PRESS 11: Bubble thouth file");
+                Console.WriteLine("ENTER PRESS  12 : binarysearch thouth file");
 
                 int n = Convert.ToInt32(Console.ReadLine());
                 switch (n)
@@ -39,8 +43,8 @@ namespace Algorithmspgm
                         an.FindAnagram();
                         break;
                     case 2:
-                        Utility ut = new Utility();
-                        ut.PrimeNum();
+                        CountPrime cp = new CountPrime();
+                        cp.CountPrimeNum();
                         break;
                     case 3:
                         WeekDays wd = new WeekDays();
@@ -66,10 +70,27 @@ namespace Algorithmspgm
                         CountNotes cn = new CountNotes();
                         cn.CountTheNotes();
                         break;
+                    case 9:
+                        BinarySearch2 uts = new BinarySearch2();
+                        uts.BinSer();
+                        break;
+                    case 10:
+                        BinarySearchS bs = new BinarySearchS();
+                        bs.BinSerS();
+                        break;
+                    case 11:
+                        BubbleSortthouthFile bsf = new BubbleSortthouthFile();
+                        bsf.Bfile();
+                        break;
+                    case 12:
+                        BinarySearchword bw = new BinarySearchword();
+                        bw.BinSeF();
+                        break;
 
 
+                  
 
-
+                        
                 }
 
                 Console.WriteLine("ENTER YES FOR CONTINUES NO FOR STOP");

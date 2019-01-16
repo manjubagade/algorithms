@@ -14,31 +14,35 @@ namespace Algorithmspgm
     /// </summary>
     class Utility
     {
+        private Stopwatch stopwatch = new Stopwatch();
         /// <summary>
         /// Gets the integer. 
         /// </summary>
         /// <returns> it returns the integer that is required</returns>
-        private Stopwatch stopwatch = new Stopwatch();
-        public int GetInt()
-        {
+         public int GetInt()
+          {
             int n = Convert.ToInt32(Console.ReadLine());
             return n;
-        }
+          }
+
         /// <summary>
         /// </summary>
-        /// <returns></returns>
+        /// <returns> its return the double that is required</returns>
         public Double GetDouble()
         {
             Double d = Convert.ToDouble(Console.ReadLine());
             return d;
         }
+
         /// <summary>
-        /// 
+        /// take input from user
         /// </summary>
         public void PrimeNum()
-        {
+        { 
+            ////takes input range between prime number
             Console.WriteLine("enter the range of prime numbers ");
             int n = GetInt();
+            ////creating one array list
             ArrayList ar = new ArrayList();
             bool isprime = true;
             Console.WriteLine("range between the primes numbers");
@@ -64,13 +68,16 @@ namespace Algorithmspgm
 
         public void DayOFWeek()
         {
-            //formula for year between 0000 to 9999
+            ////take input from user for year
             Console.WriteLine("enter the year");
             int year = this.GetInt();
+            ////take input from user for month
             Console.WriteLine("enter the month");
             int month = this.GetInt();
+            ////takes input from user for days
             Console.WriteLine("enter the days");
             int date = this.GetInt();
+            ////formula for the days
             int year1 = year - (14 - month) / 12;
             int x = year1 + (year1 / 4) - (year1 / 100) + (year1 / 400);
             int month1 = month + 12 * ((14 - month) / 12) - 2;
@@ -87,14 +94,19 @@ namespace Algorithmspgm
         }
         public void MonthlyPayments()
         {
+            //// take input from user for payment
             Console.WriteLine("enter the payment");
             Double p = this.GetDouble();
+            ////take input from use for year
             Console.WriteLine("enter the year");
             Double y = this.GetDouble();
+            //// takes input from user for interest 
             Console.WriteLine("enter the interest");
             Double inte = this.GetDouble();
+            //// intials the valuse 
             double n = 12 * y;
             double r = inte / (12 * 100);
+            //// formula for payments 
             double payment = (p * r) / (1 - Math.Pow(1 + r, -n));
             Console.WriteLine("the monthly payment is " + payment);
             Console.ReadLine();
@@ -102,8 +114,10 @@ namespace Algorithmspgm
         public void SquareRoot()
         {
             Utility ut = new Utility();
+            //// take input from user 
             Console.WriteLine("enter number");
             double d = ut.GetDouble();
+            ////inials the values declaration 
             double t = d;
             double epsilon = 1e-15;
 
@@ -243,7 +257,7 @@ namespace Algorithmspgm
         /// <summary>
         /// Binary search
         /// </summary>
-        /// <param name="numbers"></param>
+        /// <param name="numbers"> take numbers</param>
         public void BinarySearch(int[] numbers)
         {
             int firstind = 0;
@@ -253,7 +267,7 @@ namespace Algorithmspgm
             this.stopwatch.Start();
             while (firstind <= lastind)
             {
-                int midind =firstind + lastind / 2;
+                int midind = firstind + lastind / 2;
                 if (numbers[midind] == binary)
                 {
                     Console.WriteLine("THE SEARCHING POSition" +(midind + 1));
