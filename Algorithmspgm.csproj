@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Anagram.cs" />
+    <Compile Include="BinaryDecimal.cs" />
     <Compile Include="BinarySearch2.cs" />
     <Compile Include="BinarySearchS.cs" />
     <Compile Include="BinarySearchword.cs" />
@@ -52,12 +53,14 @@
     <Compile Include="CountPrime.cs" />
     <Compile Include="Decimaltobinary.cs" />
     <Compile Include="InsertionSort.cs" />
+    <Compile Include="MargeSorting.cs" />
     <Compile Include="MonthlyPay.cs" />
     <Compile Include="PalidromeAnagram.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SortingAndSearching.cs" />
     <Compile Include="SqureRoot.cs" />
+    <Compile Include="TemparetureCon.cs" />
     <Compile Include="Utility.cs" />
     <Compile Include="WeekDays.cs" />
   </ItemGroup>

@@ -36,7 +36,9 @@ namespace Algorithmspgm
                 Console.WriteLine("ENTER PRESS  12 : binarysearch thouth file");
                 Console.WriteLine("ENTER PRESS 13:INSERTION SORT");
                 Console.WriteLine("ENTER PREESS 14 : FINDING NUMBER");
-
+                Console.WriteLine("ENTER PRESS 15 :MARGESORT ");
+                Console.WriteLine("ENTER PRESS 16 : TEMPRATURE CONVERTIONN");
+                Console.WriteLine("ENTER PRESS 17 : FOR BINARY NIBBALE ");
                 int n = Convert.ToInt32(Console.ReadLine());
                 switch (n)
                 {
@@ -96,12 +98,35 @@ namespace Algorithmspgm
                         Utility u = new Utility();
                         u.Guessnum();
                         break;
+                    case 15:
+                        Utility ur = new Utility();
+                        MargeSorting sc = new MargeSorting();
+                        Console.WriteLine("Enter size of array:");
+                        int mst =ur.GetInt();
+                        string[] mss = new string[mst];
+                        Console.WriteLine("Enter " + mst + " elements");
+                        for (int i = 0; i < mss.Length; i++)
+                        {
+                            mss[i] = Utility.GetString();
+                        }
 
+                        Console.WriteLine("Sorted Arrays:");
 
+                       
+                        foreach (string line in mss)
+                        {
+                            Console.WriteLine(line + " ");
+                        }
 
-                  
-
-                        
+                        break;
+                       case 16:
+                            TemparetureCon tc = new TemparetureCon();
+                           tc.TempCon();
+                           break;
+                    case 17:
+                        BinaryDecimal bc = new BinaryDecimal();
+                        bc.BenaryToDec();
+                        break;
                 }
 
                 Console.WriteLine("ENTER YES FOR CONTINUES NO FOR STOP");

@@ -33,6 +33,11 @@ namespace Algorithmspgm
             Double d = Convert.ToDouble(Console.ReadLine());
             return d;
         }
+        public static string GetString()
+        {
+            string s = Convert.ToString(Console.ReadLine());
+            return s;
+        }
 
         /// <summary>
         /// take input from user
@@ -327,12 +332,12 @@ namespace Algorithmspgm
             for (int i = 1; i <= numbers.Length - 1; i++)
             {
                 int key = numbers[i];
-                int j = i - 1;
+                int j = i-1;
 
-                while (j > 0 && numbers[j] > key)
+                while (j >= 0 && numbers[j] > key)
                 {
                     numbers[j + 1] = numbers[j];
-                    j = j + 1;
+                    j = j - 1;
                 }
 
                 numbers[j + 1] = key;
@@ -477,6 +482,7 @@ namespace Algorithmspgm
             }
         }
 
+     
     }
 }
 
