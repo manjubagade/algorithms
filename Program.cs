@@ -34,6 +34,8 @@ namespace Algorithmspgm
                 Console.WriteLine("ENTER PRESS 10: BINARYSEARCH SREING");
                 Console.WriteLine("ENTER PRESS 11: Bubble thouth file");
                 Console.WriteLine("ENTER PRESS  12 : binarysearch thouth file");
+                Console.WriteLine("ENTER PRESS 13:INSERTION SORT");
+                Console.WriteLine("ENTER PREESS 14 : FINDING NUMBER");
 
                 int n = Convert.ToInt32(Console.ReadLine());
                 switch (n)
@@ -86,6 +88,15 @@ namespace Algorithmspgm
                         BinarySearchword bw = new BinarySearchword();
                         bw.BinSeF();
                         break;
+                    case 13:
+                        InsertionSort insertionSort = new InsertionSort();
+                        insertionSort.InserTionSortNum();
+                        break;
+                    case 14:
+                        Utility u = new Utility();
+                        u.Guessnum();
+                        break;
+
 
 
                   

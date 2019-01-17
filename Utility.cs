@@ -14,16 +14,16 @@ namespace Algorithmspgm
     /// </summary>
     class Utility
     {
-        private Stopwatch stopwatch = new Stopwatch();
+        Stopwatch stopwatch = new Stopwatch();
         /// <summary>
         /// Gets the integer. 
         /// </summary>
         /// <returns> it returns the integer that is required</returns>
-         public int GetInt()
-          {
+        public int GetInt()
+        {
             int n = Convert.ToInt32(Console.ReadLine());
             return n;
-          }
+        }
 
         /// <summary>
         /// </summary>
@@ -38,7 +38,7 @@ namespace Algorithmspgm
         /// take input from user
         /// </summary>
         public void PrimeNum()
-        { 
+        {
             ////takes input range between prime number
             Console.WriteLine("enter the range of prime numbers ");
             int n = GetInt();
@@ -146,7 +146,7 @@ namespace Algorithmspgm
                 numbers[i] = utility.GetInt();
             }
 
-            this.insertionSortlLogic(numbers);
+            this.InsertionSortlLogic(numbers);
         }
         public void InsertionSortOfString()
         {
@@ -270,7 +270,7 @@ namespace Algorithmspgm
                 int midind = firstind + lastind / 2;
                 if (numbers[midind] == binary)
                 {
-                    Console.WriteLine("THE SEARCHING POSition" +(midind + 1));
+                    Console.WriteLine("THE SEARCHING POSition" + (midind + 1));
                     break;
                 }
                 if (binary > numbers[midind])
@@ -321,20 +321,21 @@ namespace Algorithmspgm
             this.stopwatch.Stop();
             Console.WriteLine("time taken for binary search of string is " + this.stopwatch.Elapsed);
         }
-        public void insertionSortlLogic(int[] numbers)
+        public void InsertionSortlLogic(int[] numbers)
         {
             this.stopwatch.Start();
-            for (int j = 1; j <= numbers.Length - 1; j++)
+            for (int i = 1; i <= numbers.Length - 1; i++)
             {
-                int value = numbers[j];
-                int index = j;
-                while (index > 0 && numbers[index - 1] > value)
+                int key = numbers[i];
+                int j = i - 1;
+
+                while (j > 0 && numbers[j] > key)
                 {
-                    numbers[index] = numbers[index - 1];
-                    index--;
+                    numbers[j + 1] = numbers[j];
+                    j = j + 1;
                 }
 
-                numbers[index] = value;
+                numbers[j + 1] = key;
             }
 
             this.stopwatch.Stop();
@@ -388,12 +389,96 @@ namespace Algorithmspgm
             }
             return binaryNum;
         }
-        
-        
+        public void GuessNum()
+        {
+            Random r = new Random();
+
+            int val = r.Next(1, 16);
+            int guess = 0;
+            bool correct = false;
+
+            Console.WriteLine("I'm thinking of a number between 1 and 16.");
+
+            while (!correct)
+            {
+                Console.Write("Guess: ");
+                string input = Console.ReadLine();
+
+                if (!int.TryParse(input, out guess))
+                {
+                    Console.WriteLine("That's not a number.");
+                    continue;
+                }
+
+                if (guess < val)
+                {
+                    Console.WriteLine("No, the number I'm thinking is higher than that number.");
+                }
+                else if (guess > val)
+                {
+                    Console.WriteLine("No, the number I'm thinking is lower than that number.");
+                }
+                else
+                {
+                    correct = true;
+                    Console.WriteLine("You guessed right!");
+                }
+            }
+        }
+
+       public void Guessnum()
+            
+        {
+            try
+            {
+                Utility utt = new Utility();
+                Console.WriteLine("enter the power of 2 ");
+                int n = this.GetInt();
+                int num = (int)Math.Pow(2, n);
+                int[] arr = new int[num];
+                for (int i = 0; i <= num - 1; i++)
+                {
+                    arr[i] = i;
+                }
+                Console.WriteLine("the range between  0 to " + (num - 1));
+                int first = 0;
+                int last = num - 1;
+                bool c;
+                bool HorL;
+                while (first <= last)
+                {
+                    int mid = (first + last) / 2;
+                    Console.WriteLine(" enter one number  ");
+                    n = this.GetInt();
+                    Console.WriteLine("your number is " + arr[mid] + "if yes then enter true else false");
+                   c = Convert.ToBoolean(Console.ReadLine());
+                
+                 if (c == true)
+                 {
+                    Console.WriteLine(" congras your guesing number is   "   + arr[mid]);
+
+                 }
+                    Console.WriteLine("your num is grether then " + arr[mid] + "if yes enter true else false");
+                    HorL = Convert.ToBoolean(Console.ReadLine());
+                    if (HorL)
+                    {
+                        first = mid + 1;
+
+                    }
+                    else
+                    {
+                        last = mid - 1;
+                    }
+                }
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
     }
 }
-
-    
 
 
 
