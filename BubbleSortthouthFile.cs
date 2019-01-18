@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="BubbleSortThroughFile.cs" company="CompanyName">
+// <copyright file="BubbleSortthouthFile.cs" company="CompanyName">
 //     Company copyright tag.
 // </copyright>
 //-----------------------------------------------------------------------
@@ -8,10 +8,13 @@ namespace Algorithmspgm
     using System;
 
     /// <summary>
-    /// bubble sort thouth file
+    /// bubble sort function file
     /// </summary>
-    class BubbleSortthouthFile
+    public class BubbleSortthouthFile
     {
+        /// <summary>
+        /// bubblesort function
+        /// </summary>
         public void Bfile()
         {
             try

@@ -8,6 +8,9 @@ namespace Algorithmspgm
 {
     class BinaryDecimal
     {
+        /// <summary>
+        /// binary decimal number 
+        /// </summary>
         public void BenaryToDec()
         {
             try
